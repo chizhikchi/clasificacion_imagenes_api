@@ -56,7 +56,6 @@ Una solución containerizada de machine learning que clasifica emociones faciale
 
 ### Prerequisitos
 - Docker instalado
-- Archivo del modelo: `efficientnet_v2_model01.pth`
 
 ### 1. Construir el contenedor
 ```bash
