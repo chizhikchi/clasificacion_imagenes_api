@@ -208,28 +208,6 @@ python app.py
 - **Swagger UI**: http://localhost:8080/docs
 - **ReDoc**: http://localhost:8080/redoc
 
-## 🌐 Configuración de Producción
-
-### Variables de entorno recomendadas
-```bash
-# Configuración del servidor
-export HOST="0.0.0.0"
-export PORT="8080"
-export WORKERS="1"  # Para modelos ML, 1 worker es óptimo
-
-# Configuración del modelo
-export MODEL_PATH="efficientnet_v2_model01.pth"
-export DEVICE="cuda"  # o "cpu"
-```
-
-### Escalado horizontal
-```bash
-# Múltiples instancias con load balancer
-docker run -d -p 8081:8080 --name emotion-api-1 efficientnet-emotion-api
-docker run -d -p 8082:8080 --name emotion-api-2 efficientnet-emotion-api
-docker run -d -p 8083:8080 --name emotion-api-3 efficientnet-emotion-api
-```
-
 ## ⚡ Rendimiento
 
 ### Métricas de Eficiencia
