@@ -14,7 +14,6 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the model and application files
-COPY efficientnet_v2_model01.pth .
 COPY efficientnet_v2_model.pth .
 COPY app.py .
 # Copiar conjunto de validación
